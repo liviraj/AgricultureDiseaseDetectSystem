@@ -96,38 +96,37 @@
             <div class="row">
                <div class="col-md-12 ">
                   <div class="titlepage text_align_center">
-                     <span>Our Contact</span>
-                     <h2>Requste A Call Back</h2>
+                     <h2>Solution</h2>
                   </div>
                </div>
                <div class="col-md-8 offset-md-2">
                   <form id="request" class="main_form">
                      <div class="row">
                         <div class="col-md-12 ">
-                           <input class="form_control" placeholder="Your Name" type="type" name=" Name"> 
+                        <label>Plant Name: </label><label>${details.plantName}
                         </div>
                         <div class="col-md-12">
-                           <input class="form_control" placeholder="Phone Number" type="type" name="Phone Number">                          
+                           <label>Disease Name: </label><label>${details.diseaseName}                          
                         </div>
                           <div class="col-md-12">
-                           <input class="form_control" placeholder="Your Email" type="type" name="Email">                          
+                           <label>Disease Name: </label><label>${details.diseaseName}                          
                         </div>
                         <div class="col-md-12">
-                           <input class="textarea" placeholder="Message" type="type" name="message"> 
+                        <label>Solution Discription: </label>
+                           <input class="textarea" placeholder="Message" type="type" name="message" value="${details.solutionDescription}"> 
                         </div>
                         <div class="col-md-12">
-                           <div class="group_btn">
-                           <button id="contactSubmit" class="send_btn">Send</button>
-                         </div>
+                        <label>Video Link </label>
+                           <div class="map-responsive">
+            				<iframe src="${details.videoLink}" width="600" height="430" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+         				</div>
                         </div>
                      </div>
                   </form>
                </div>
             </div>
          </div>
-          <div class="map-responsive">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15624.804007729781!2d79.75637546135212!3d11.750885723497008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a549888444e5d9d%3A0x6aa2c2d991f57236!2sCuddalore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1709731615951!5m2!1sen!2sin" width="600" height="430" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-         </div>
+          
       </div>
       <!-- end contact -->
      <!--  footer -->
@@ -136,7 +135,7 @@
                <div class="container">
                   <div class="row d_flex">
                      <div class="col-md-8">
-                        <p>© 2022 All Rights Reserved by AgriGuard</p>
+                        <p>© 2024 All Rights Reserved by AgriGuard</p>
                      </div>
                   </div>
                </div>

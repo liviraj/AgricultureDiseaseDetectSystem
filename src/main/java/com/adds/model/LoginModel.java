@@ -1,4 +1,4 @@
-package com.bgss.model;
+package com.adds.model;
 
 /**
  * Login data beens

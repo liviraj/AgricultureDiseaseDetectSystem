@@ -1,4 +1,4 @@
-package com.bgss.connection;
+package com.adds.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

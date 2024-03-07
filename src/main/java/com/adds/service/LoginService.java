@@ -1,12 +1,12 @@
-package com.bgss.service;
+package com.adds.service;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import com.bgss.connection.DbConnection;
-import com.bgss.model.LoginModel;
+import com.adds.connection.DbConnection;
+import com.adds.model.LoginModel;
 
 public class LoginService {
 

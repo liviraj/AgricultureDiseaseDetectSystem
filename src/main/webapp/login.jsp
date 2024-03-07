@@ -30,6 +30,18 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
       <script src="js/jquery.min.js"></script>
+      <script>
+    		// Get the message element by its ID
+    		var messageElement = document.getElementById('message');
+
+    		// Function to hide the message after a specified time (in milliseconds)
+    		function hideMessage() {
+        		messageElement.style.display = 'none';
+    		}
+
+    		// Set a timeout to call the hideMessage function after 3000 milliseconds (3 seconds)
+    		setTimeout(hideMessage, 5000);
+		</script>
    </head>
    <!-- body -->
    <body class="main-layout inner_page">
@@ -87,14 +99,16 @@
                      <h2>LogIn</h2>
                   </div>
                </div>
+               
                <div class="col-md-8 offset-md-2">
-                  <form id="request" action="LoginHomeController" method="post" class="main_form">
+                  <form action="LoginHomeController" method="post" class="main_form" id="request" >
+                  <center><span id="message" style="color: red">${msg}</span></center>
                      <div class="row">
                         <div class="col-md-12 ">
-                           <input class="form_control" placeholder="Username" type="text" name="Username" id="uname" name="uname"> 
+                           <input class="form_control" placeholder="Username" type="text" id="uname" name="uname"> 
                         </div>
                         <div class="col-md-12">
-                           <input class="form_control" placeholder="Password" type="password" name="Password" id="psw" name="psw">                          
+                           <input class="form_control" placeholder="Password" type="password" id="psw" name="psw">                          
                         </div>
                         <div class="col-md-12">
                            <div class="group_btn">
@@ -114,7 +128,7 @@
                <div class="container">
                   <div class="row d_flex">
                      <div class="col-md-8">
-                        <p>© 2022 All Rights Reserved by AgriGuard</p>
+                        <p>© 2024 All Rights Reserved by AgriGuard</p>
                      </div>
                   </div>
                </div>

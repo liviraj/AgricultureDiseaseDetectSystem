@@ -220,7 +220,7 @@
                <div class="container">
                   <div class="row d_flex">
                      <div class="col-md-8">
-                        <p>© 2022 All Rights Reserved by AgriGuard</p>
+                        <p>© 2024 All Rights Reserved by AgriGuard</p>
                      </div>
                   </div>
                </div>

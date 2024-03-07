@@ -1,4 +1,4 @@
-package com.bgss.controller;
+package com.adds.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.bgss.model.LoginModel;
-import com.bgss.service.LoginService;
+import com.adds.model.LoginModel;
+import com.adds.service.LoginService;
 
 
 /**

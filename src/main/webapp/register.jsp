@@ -106,16 +106,16 @@ function validation() {
                   </div>
                </div>
                <div class="col-md-8 offset-md-2">
-                  <form name="registerform" action="LoginRegisterController" method="post" class="main_form">
+                  <form action="LoginRegisterController" method="post" class="main_form" id="request" name="registerform" >
                      <div class="row">
                         <div class="col-md-12 ">
-                           <input class="form_control" placeholder="Username" type="text" name="Username" id="uname" name="uname"> 
+                           <input class="form_control" placeholder="Username" type="text" id="uname" name="uname"> 
                         </div>
                         <div class="col-md-12">
-                           <input class="form_control" placeholder="Password" type="password" name="Password" id="psw" name="psw">                          
+                           <input class="form_control" placeholder="Password" type="password" id="psw" name="psw">                          
                         </div>
                         <div class="col-md-12">
-                           <input class="form_control" placeholder="Re-Enter Password" type="password" name="Re-Enter Password" id="psw1" name="psw1">                          
+                           <input class="form_control" placeholder="Re-Enter Password" type="password" id="psw1" name="psw1">                          
                         </div>
                         <div class="col-md-12">
                            <div class="group_btn">
@@ -135,7 +135,7 @@ function validation() {
                <div class="container">
                   <div class="row d_flex">
                      <div class="col-md-8">
-                        <p>© 2022 All Rights Reserved by AgriGuard</p>
+                        <p>© 2024 All Rights Reserved by AgriGuard</p>
                      </div>
                   </div>
                </div>
