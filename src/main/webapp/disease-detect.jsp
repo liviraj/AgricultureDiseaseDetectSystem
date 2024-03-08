@@ -51,7 +51,7 @@
                      <div class="navbar-area">
                         <nav class="site-navbar">
                            <ul>
-                              <li><a href="Disease-detect.jsp">Detect Disease</a></li>
+                              <li><a href="disease-detect.jsp">Detect Disease</a></li>
                            </ul>
                            <button class="nav-toggler">
                            <span></span>

@@ -57,9 +57,26 @@ public class SolutionController extends HttpServlet {
 			SolutionService service = new SolutionService();
 			DiseaseSolution solution = service.getSolution(plantType, diseaseType);
 			
+			solution.setVideoLink(extractVideoId(solution.getVideoLink()));
 			request.setAttribute("details", solution);
 			requestDispatcher = request.getRequestDispatcher(SOLUTION_PAGE);
 		}
 		requestDispatcher.forward(request, response);
 	}
+	
+	// Method to extract video ID from YouTube URL
+    private static String extractVideoId(String youtubeUrl) {
+        String videoId = null;
+        
+        if (youtubeUrl != null && youtubeUrl.trim().length() > 0) {
+            int index = youtubeUrl.indexOf("v=");
+            
+            if (index != -1) {
+                // Extract the substring after 'v='
+                videoId = youtubeUrl.substring(index + 2);
+            }
+        }
+        
+        return videoId;
+    }
 }

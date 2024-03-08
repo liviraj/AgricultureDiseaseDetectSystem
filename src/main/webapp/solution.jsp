@@ -26,6 +26,31 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+      <style>
+        /* Add your custom styles here */
+        .col-md-12 {
+            margin-bottom: 15px;
+        }
+
+        .map-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .map-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        h3 {
+            font-weight: bold; /* Make h3 tags bold */
+        }
+    </style>
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -64,12 +89,7 @@
                      <div class="navbar-area">
                         <nav class="site-navbar">
                            <ul>
-                              <li><a href="index.jsp">Home</a></li>
-                              <li><a href="about.jsp">About</a></li>
-                              <li><a href="service.jsp">Service</a></li>
-                              <li><a href="testimonail.jsp">Testimonail</a></li>
-                              <li><a href="blog.jsp">Blog</a></li>
-                              <li><a class="active" href="contact.jsp">Contact</a></li>
+                              <li><a href="disease-detect.jsp">Detect Disease</a></li>
                            </ul>
                            <button class="nav-toggler">
                            <span></span>
@@ -79,9 +99,7 @@
                   </div>
                   <div class="col-md-2 padd_0 d_none">
                      <ul class="email text_align_right">
-                        <li><a href="login.jsp">Login</a>
-                        </li>
-                        <li><a href="register.jsp">Register</a>
+                        <li><a href="index.jsp">LogOut</a>
                         </li>
                      </ul>
                   </div>
@@ -103,23 +121,20 @@
                   <form id="request" class="main_form">
                      <div class="row">
                         <div class="col-md-12 ">
-                        <label>Plant Name: </label><label>${details.plantName}
+                        <h3>Plant Name: </h3><label>${details.plantName}
                         </div>
                         <div class="col-md-12">
-                           <label>Disease Name: </label><label>${details.diseaseName}                          
-                        </div>
-                          <div class="col-md-12">
-                           <label>Disease Name: </label><label>${details.diseaseName}                          
+                           <h3>Disease Name: </h3><label>${details.diseaseName}                          
                         </div>
                         <div class="col-md-12">
-                        <label>Solution Discription: </label>
-                           <input class="textarea" placeholder="Message" type="type" name="message" value="${details.solutionDescription}"> 
+                        <h3>Solution Description: </h3>
+                           <label>${details.solutionDescription}</label> 
                         </div>
                         <div class="col-md-12">
-                        <label>Video Link </label>
                            <div class="map-responsive">
-            				<iframe src="${details.videoLink}" width="600" height="430" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-         				</div>
+                           <h3>Video Link </h3>
+    						<iframe width="600" height="430" src="https://www.youtube.com/embed/${details.videoLink}" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+						</div>
                         </div>
                      </div>
                   </form>
